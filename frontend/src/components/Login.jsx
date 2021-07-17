@@ -33,10 +33,17 @@ const Login = () => {
             required
           />
           <br />
-          <input type='radio' id='prof' name='access' />
-          <label htmlFor='prof'>Professor</label>
-          <input type='radio' id='student' name='access' />
-          <label htmlFor='student'>Student</label>
+          <br />
+          <br />
+          <br />
+          <label style={{ margin: '0 1rem' }}>
+            <input name='group1' type='radio' />
+            <span>Professor</span>
+          </label>
+          <label>
+            <input name='group1' type='radio' />
+            <span>Student</span>
+          </label>
           <br />
           <input type='submit' value='Login' onClick={handleSubmit} className='btn' />
         </form>
